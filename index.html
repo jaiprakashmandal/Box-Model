@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <style type="text/css">
+        .button {
+            background-color: green;
+            color: white;
+            margin-top: 40px;
+            padding: 10px;
+            display: inline-block;
+            width: 25%;
+        }
+        .p {
+            padding-left: 60%;
+            margin-top: -14%;
+            color: rgb(14, 160, 63);
+        }
+        .m {
+            padding-right: 220px;
+            margin-top: 5px;
+        }
+        .dkk {
+            text-decoration: line-through;
+            margin-top: -38px;
+            opacity: 0.5;
+            padding-left: 10%;
+        }
+        .o {
+           padding-left: 64%;
+           margin-top: -2%;
+        }
+        div {
+            height: 200px;
+            width: 30%;
+            border: 4px solid;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        div.cstDiv:hover{
+            background-color: rgb(180, 240, 185);
+        }
+        .cstDiv {
+            margin: 1rem;
+        }
+        .custom {
+            padding-right: 70%;
+            height: 60%;
+        }
+        .size {
+           padding-right: 20%;
+           margin-top: -35px;   
+        }
+        .color {
+            padding-left: 24%;
+        }
+        .free {
+            color: rgb(10, 179, 46);
+            padding-right: 4cm;
+        }
+        .total{
+            padding-left: 15%;
+            margin-top: -34px;
+        }
+        .power {
+            padding-left: 12%;
+        }
+        .bundle {
+            color: rgb(87, 156, 108);
+        }
+        /* .lan {
+            padding-right: 40%;
+        }
+        .lang {
+            padding-right: 40%;
+        }
+        .langu {
+            padding-right: 40%;
+        } */
+        fieldset {
+            background-color: rgb(24, 202, 119);
+            width: fit-content;
+            border-radius: 10%;
+            border-width: 5;
+        }
+
+        legend {
+            background-color: black;
+            color: white;
+            font-size: larger;
+        }
+    </style>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+    <center>
+    <h3 class="bundle">--------------- Bundle and Save --------------</h3>
+    <button id="open-dialog">Open Dialog</button>
+    </center>
+
+    <dialog id="my-dialog">
+        <!-- <h2>Dialog Box Title</h2> -->
+        <!-- <p>Dialog Box Content</p> -->
+        <center>
+            <style type="text/css">
+                fieldset1 {
+                    background-color: aqua;
+                    width: fit-content;
+            border-radius: 20%;
+            border-width: 10;
+            box-sizing: 10%;
+        }
+
+        legend {
+            background-color: black;
+            color: white;
+            font-size: larger;
+        }
+            </style>
+            <fieldset1>
+                <legend>Student Information</legend>
+                Name:
+                <input type="text" name="Name" size="15" maxlength="30" placeholder="Name"><br><br>
+                Father Name :
+                <input type="text" name="Father Name" size="15" maxlength="30" placeholder="Father Name"><br><br>
+                Mother Name :
+                <input type="text" name="Mother Name" size="15" maxlength="30" placeholder="Mother Name"><br><br>
+                Email :
+                <input type="text" name="Email" size="15" maxlength="30" placeholder="Email"><br><br>
+                Gender :-
+                <input type="radio" name="Gender" size="15" maxlength="30">Male
+                <input type="radio" name="Gender" size="15" maxlength="30">Female<br><br>
+                Phone Number:-
+                <input type="text" name="Phone Number" size="15" maxlength="30" placeholder="Phone Number"><br><br>
+            </fieldset>
+        </center>
+        <button id="close-dialog">Close</button>
+    </dialog>
+
+    <script>
+        const openButton = document.getElementById('open-dialog');
+        const dialog = document.getElementById('my-dialog');
+        const closeButton = document.getElementById('close-dialog');
+
+        openButton.addEventListener('click', () => {
+            dialog.showModal();
+        });
+
+        closeButton.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+
+<center>
+    <div class="cstDiv">
+        <label class="custom">
+        <input type="radio" name="Gender" size="15" maxlength="30">1 Pair</label>
+        <p class="m"><b>DKK 195.00</b></p>
+        <p class="p">Most Popular</p>
+        <p class="o">50% OFF</p>
+        <p class="dkk">DKK 195.00</p><br> 
+        
+        <label class="size">Size</label><br>
+        <label class="color">Colour</label><br>
+        <label class="lan">#1 </label>
+
+        <select name="language" id="language">
+            <option value="javascript" class="langu">Java</option>
+            <option value="python">Python</option>
+        </select>
+        
+        <select name="language" id="language">
+            <option value="javascript">Java</option>
+            <option value="python">Python</option>
+        </select> <br>
+        <label class="lang">#2 </label>
+        <select name="language" id="language">
+            <option value="javascript">Java</option>
+            <option value="python">Python</option>
+        </select>
+        <select name="language" id="language">
+            <option value="javascript">Java</option>
+            <option value="python">Python</option>
+        </select><br>
+    
+    </div>
+
+    <center>
+        <div class="cstDiv">
+            <label class="custom">
+            <input type="radio" name="Gender" size="15" maxlength="30">2 Pair</label>
+            <p class="m"><b>DKK 345.00</b></p>
+            <p class="p">Most Popular</p>
+            <p class="o">40% OFF</p>
+            <p class="dkk">DKK 195.00</p><br> 
+            
+            <label class="size">Size</label><br>
+            <label class="color">Colour</label><br>
+            <label class="lan">#1 </label>
+
+            <select name="language" id="language">
+                <option value="javascript" class="langu">Java</option>
+                <option value="python">Python</option>
+            </select>
+            
+            <select name="language" id="language">
+                <option value="javascript">Java</option>
+                <option value="python">Python</option>
+            </select> <br>
+            <label class="lang">#2 </label>
+            <select name="language" id="language">
+                <option value="javascript">Java</option>
+                <option value="python">Python</option>
+            </select>
+            <select name="language" id="language">
+                <option value="javascript">Java</option>
+                <option value="python">Python</option>
+            </select><br>
+        
+        </div>
+
+    <center>
+        <div class="cstDiv">
+            <label class="custom">
+            <input type="radio" name="Gender" size="15" maxlength="30">3 Pair</label>
+            <p class="m"><b>DKK 528.00</b></p>
+            <p class="p">Most Popular</p>
+            <p class="o">60% OFF</p>
+            <p class="dkk">DKK 195.00</p><br> 
+            
+            <label class="size">Size</label><br>
+            <label class="color">Colour</label><br>
+            <label class="lan">#1 </label>
+
+            <select name="language" id="language">
+                <option value="javascript" class="langu">Java</option>
+                <option value="python">Python</option>
+            </select>
+            
+            <select name="language" id="language">
+                <option value="javascript">Java</option>
+                <option value="python">Python</option>
+            </select> <br>
+            <label class="lang">#2 </label>
+            <select name="language" id="language">
+                <option value="javascript">Java</option>
+                <option value="python">Python</option>
+            </select>
+            <select name="language" id="language">
+                <option value="javascript">Java</option>
+                <option value="python">Python</option>
+            </select><br>
+        
+        </div>
+        <p class="free">Free 2 Day Shipping</p>
+        <p class="total">Total : DKK 360.00</p>
+        <button class="button">Add to cart</button>
+        <p class="power">@Powered by Pumper</p>
+    </center>
+</body>
+
+</html>
